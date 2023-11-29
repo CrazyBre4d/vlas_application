@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="androidLargeFiveVM" type="com.vlassapplication.app.modules.androidlargefive.data.viewmodel.AndroidLargeFiveVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameAndroidLarge"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylegray_400">
+        <LinearLayout android:id="@+id/linearColumnclose"
+            android:layout_gravity="center"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:layout_marginStart="@dimen/_10pxh"
+            android:layout_marginTop="@dimen/_22pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <androidx.appcompat.widget.Toolbar
+                android:gravity="center_horizontal"
+                android:id="@+id/toolbarToolbar"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_11pxh"
+                android:layout_marginStart="@dimen/_11pxh"
+                android:layout_width="match_parent" app:contentInsetStart="0dp">
+                <LinearLayout android:id="@+id/linearRowtextone"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtTextOne"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.92"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{androidLargeFiveVM.androidLargeFiveModel.txtTextOne}"
+                        style="@style/txtMontserratextrabold24" tools:text="@string/msg"/>
+                    <ImageView android:id="@+id/imageClose"
+                        android:layout_height="@dimen/_24pxh"
+                        android:layout_marginBottom="@dimen/_5pxv"
+                        android:layout_marginStart="@dimen/_12pxh"
+                        android:layout_marginTop="@dimen/_1pxv"
+                        android:layout_width="@dimen/_24pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_close"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_close"/>
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+            <LinearLayout android:id="@+id/linearColumntext"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_59pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylecornerRadius">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtText"
+                    android:layout_gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_12pxh"
+                    android:layout_marginStart="@dimen/_12pxh"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{androidLargeFiveVM.androidLargeFiveModel.txtText}"
+                    style="@style/txtMontserratromanbold14" tools:text="@string/lbl4"/>
+                <View
+                    android:background="@drawable/rectangle_bg_gray_200_radius_20"
+                    android:id="@+id/viewRectangleThree"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_40pxv"
+                    android:layout_marginTop="@dimen/_2pxv" android:layout_width="@dimen/_340pxh"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/linearColumntextOne"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_11pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylecornerRadius">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtTextOne1"
+                    android:layout_gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_12pxh"
+                    android:layout_marginStart="@dimen/_12pxh"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{androidLargeFiveVM.androidLargeFiveModel.txtTextOne1}"
+                    style="@style/txtMontserratromanbold14" tools:text="@string/msg2"/>
+                <View
+                    android:background="@drawable/rectangle_bg_gray_200_radius_20"
+                    android:id="@+id/viewFirst"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_40pxv"
+                    android:layout_marginTop="@dimen/_2pxv" android:layout_width="@dimen/_340pxh"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/linearColumntextTwo"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_11pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylecornerRadius">
+                <TextView android:ellipsize="end"
+                    android:gravity="start" android:id="@+id/txtTextTwo"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_12pxh"
+                    android:layout_marginStart="@dimen/_12pxh"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{androidLargeFiveVM.androidLargeFiveModel.txtTextTwo}"
+                    style="@style/txtMontserratromanbold14" tools:text="@string/msg3"/>
+                <View
+                    android:background="@drawable/rectangle_bg_gray_200_radius_20"
+                    android:id="@+id/viewRectangleThreeTwo"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_40pxv"
+                    android:layout_marginTop="@dimen/_2pxv" android:layout_width="@dimen/_340pxh"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/linearColumntextThree"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_11pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylecornerRadius">
+                <TextView android:ellipsize="end"
+                    android:gravity="start"
+                    android:id="@+id/txtTextThree"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_12pxh"
+                    android:layout_marginStart="@dimen/_12pxh"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{androidLargeFiveVM.androidLargeFiveModel.txtTextThree}"
+                    style="@style/txtMontserratromanbold14" tools:text="@string/msg4"/>
+                <View
+                    android:background="@drawable/rectangle_bg_gray_200_radius_20"
+                    android:id="@+id/viewRectangleThreeThree"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_40pxv"
+                    android:layout_marginTop="@dimen/_2pxv" android:layout_width="@dimen/_340pxh"/>
+            </LinearLayout>
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btn"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_342pxv"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_16pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_16pxv"
+                android:singleLine="true" android:text="@string/lbl5"
+                android:textAllCaps="false"
+                style="@style/btnSolidRounded" tools:text="@string/lbl5"/>
+        </LinearLayout>
+    </FrameLayout>
+</layout>
